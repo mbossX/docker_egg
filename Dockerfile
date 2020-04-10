@@ -5,7 +5,7 @@ RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 
 ADD https://nodejs.org/dist/v12.2.0/node-v12.2.0-linux-x64.tar.gz /tmp/
-RUN tar -xzf /tmp/node-v8.9.4-linux-x64.tar.gz -C /usr/local --strip-components=1 --no-same-owner
+RUN tar -xzf /tmp/node-v12.2.0-linux-x64.tar.gz -C /usr/local --strip-components=1 --no-same-owner
 
 RUN rm -rf /tmp/*
 
